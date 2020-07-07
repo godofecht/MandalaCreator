@@ -12,5 +12,4 @@ Steps:
 
 How to use?
 
-Press the keyboard to change color.
 Draw!
