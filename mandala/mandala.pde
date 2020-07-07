@@ -76,9 +76,9 @@ void draw()
     
 
   
-  x = (a + b*value) * cos(value) + width/2;
-  y = (a + b*value) * sin(value) + height/2;
-  placeEllipse(x,y);
+//  x = (a + b*value) * cos(value) + width/2;
+//  y = (a + b*value) * sin(value) + height/2;
+//  placeEllipse(x,y);
 }
 
 
