@@ -4,7 +4,7 @@ Mandala Creator Application in the works
 
 Steps:
 
-1. Download and install processing
+1. Download and install processing: https://processing.org/download/
 2. Download this repository.
 3. Double click on the .pde file inside. 
 4. Enjoy!
