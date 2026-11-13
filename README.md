@@ -24,13 +24,11 @@ Every dot the sketch places is copied sixteen times around the centre of the can
 
 **You will need:** [Processing](https://processing.org/download). The code uses only the core Processing language, with no extra libraries, so Processing 3 or 4 should run it. This has not been tested on a specific version or operating system.
 
-Processing treats every `.pde` file in a folder as one program. The `mandala` folder holds two complete sketches, and they define the same variables and functions, so they clash if you open them together. Run each one from its own folder:
+Each sketch sits in its own folder, with the same name as its `.pde` file, which is how Processing expects a sketch to be laid out.
 
 1. On the repository page, choose **Code**, then **Download ZIP**, and unzip it.
-2. Make a new folder next to `mandala` called `mandala3D`.
-3. Move **mandala3D.pde** from `mandala` into `mandala3D`.
-4. Open Processing. Choose **File**, then **Open**, and pick **mandala/mandala.pde** for the mouse sketch or **mandala3D/mandala3D.pde** for the automatic spiral.
-5. Press the **Run** button (the triangle at the top left).
+2. Open Processing. Choose **File**, then **Open**, and pick **mandala/mandala.pde** for the mouse sketch or **mandala3D/mandala3D.pde** for the automatic spiral.
+3. Press the **Run** button (the triangle at the top left).
 
 A 1400 by 1400 pixel black window opens. With `mandala3D.pde`, a spiral of coloured dots starts to grow from the centre. With `mandala.pde`, the window stays black until you drag the mouse.
 
@@ -61,7 +59,7 @@ In `mandala3D.pde`, the dot position comes from a spiral. A counter called `valu
 | File or folder | What is in it |
 |---|---|
 | `mandala/mandala.pde` | The mouse-drawing sketch |
-| `mandala/mandala3D.pde` | The automatic spiral sketch, with a comment on every line |
+| `mandala3D/mandala3D.pde` | The automatic spiral sketch, with a comment on every line |
 | `mandala/GifPhotos/` | Frames saved from one run, one every twenty frames |
 | `docs/frames.jpg` | Five of those frames side by side, used in this README |
 
@@ -88,7 +86,6 @@ Canvas is 1400 by 1400. Change `order` for a different number of symmetries and 
 
 The sketches are small experiments and have no tests. Known problems:
 
-- The two sketches share a folder and clash in Processing. See the run steps above.
 - `mandala3D.pde` calls `rotateX` and `rotateY`, but `size` does not ask for the P3D renderer. These calls need a 3D renderer, so the 3D rotation is unlikely to take effect. This was read from the code and not tested.
 - The colour picker only uses three of the five colours in the palette.
 - Frames are saved to disk all the time while a sketch runs.
